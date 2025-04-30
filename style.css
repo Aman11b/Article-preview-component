@@ -131,6 +131,8 @@ body{
     .content p {
       padding: 1.5rem 0;
       text-align: left;
+
+      padding-bottom: 0;
     }
 
     .profile{
@@ -140,7 +142,7 @@ body{
 
       gap: 1rem;
       
-      /* align-self: baseline; */
+      padding: 0;
     }
 
     .profile_names{
@@ -153,27 +155,69 @@ body{
       padding: 0;
     }
 
+    .profile {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1.4rem;
 
-    .profile > img {
+    }
+
+    .profile_section {
+      display: flex;
+      flex-direction: row;
+
+      gap: 1rem;
+    }
+
+    .profile .profile_section > img {
       aspect-ratio: 1;
       height: 45px;
       border-radius: 50%;
 
     }
+
+    .profile .profile_name p{
+      padding: 0;
+    }
+
+    .profile_section > button {
+      margin-left: auto;
+    }
     
-    span {
+    button {
       aspect-ratio: 1;
       height: 35px;
       border-radius: 50%;
       background-color: var(--Light-Grayish-Blue);
-      background-image: url(./images/icon-share.svg);
       background-repeat: no-repeat;
       background-position: center;
+      border: none;
+      outline: none;
+      color: var(--Light-Grayish-Blue);
+      
     }
 
-    .profile > span{
-      margin-left: auto;
+    .share-Overlay {
+      background-color: var(--Very-Dark-Grayish-Blue);
+      color: var(--Grayish-Blue);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 1rem 2rem;
     }
+    .share-Overlay p {
+      font-size: 15px;
+      letter-spacing: 2.8px;
+    }
+
+
+
+    .share-Overlay button{
+      background-color: var(--Desaturated-Dark-Blue);
+    }
+
 
 
 }
