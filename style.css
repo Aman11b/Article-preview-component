@@ -135,16 +135,12 @@ body{
       padding-bottom: 0;
     }
 
-    .profile{
-      display:flex;
-      flex-direction: row;
-      margin-bottom: 0;
+    .profile {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0;
 
-      gap: 1rem;
-      
-      padding: 0;
     }
-
     .profile_names{
       display: flex;
       flex-direction: column;
@@ -154,14 +150,7 @@ body{
     .profile_names p{
       padding: 0;
     }
-
-    .profile {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 1.4rem;
-
-    }
-
+    
     .profile_section {
       display: flex;
       flex-direction: row;
@@ -197,6 +186,8 @@ body{
       
     }
 
+    /* overlay */
+
     .share-Overlay {
       background-color: var(--Very-Dark-Grayish-Blue);
       color: var(--Grayish-Blue);
@@ -211,8 +202,6 @@ body{
       font-size: 15px;
       letter-spacing: 2.8px;
     }
-
-
 
     .share-Overlay button{
       background-color: var(--Desaturated-Dark-Blue);
