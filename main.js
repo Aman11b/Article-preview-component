@@ -8,9 +8,11 @@ shareButton.addEventListener('click',()=>{
         overlaySection.style.display = '';
         profileSection.style.display = 'none';
     }
-    else if(profileSection.style.display === 'none')
-    {
-        overlaySection.style.display = 'none';
-        profileSection.style.display = '';
-    }
+});
+shareOverlay.addEventListener ('click',()=>{
+    if(profileSection.style.display === 'none')
+        {
+            overlaySection.style.display = 'none';
+            profileSection.style.display = '';
+        }
 });
