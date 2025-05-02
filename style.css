@@ -197,6 +197,56 @@ button {
   color: var(--Light-Grayish-Blue);
   
 }
+/* Desktop Styles */
+@media screen and (min-width: 376px) {
+  .profile_section {
+    position: relative;
+  }
+
+  .share-Overlay {
+    width: 250px;
+    height: 50px;
+
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 64%; /* Adjust position above the share button */
+    transform: translateX(-50%);
+
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: var(--Grayish-Blue);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.4rem;
+
+    border-radius: 0.5rem;
+  }
+
+  .share-Overlay::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--Very-Dark-Grayish-Blue);
+  }
+
+  .share-Overlay p {
+    font-size: 15px;
+    letter-spacing: 2.8px;
+  }
+
+  .share-Overlay button{
+    background-color: var(--Desaturated-Dark-Blue);
+    height: 24px;
+  }
+}
 
 /* mobile design */
 @media screen and (max-width: 375px) {
@@ -297,8 +347,6 @@ button {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      position: relative;
 
       padding: 1rem 2rem;
       margin-top: 0.8rem;
