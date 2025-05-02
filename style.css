@@ -106,10 +106,13 @@ body{
   min-height: 100vh;
   display: flex;
 
+  justify-content: center;
+  align-items: center;
+
 }
 
 .wrapper {
-  margin: 2rem 2rem;
+  margin: 2rem;
   
   overflow: hidden;
 
@@ -118,6 +121,9 @@ body{
 
   display: flex;
   flex-direction: row;
+
+  height:max-content;
+  width: 600px;
 }
 
 .wrapper .drawer_image,
@@ -127,7 +133,7 @@ body{
 
 
 .content {
-  padding:2.4rem;
+  padding:2rem;
 }
 
 .content p {
@@ -146,7 +152,6 @@ body{
 .profile_names{
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.5rem;
 
 }
 
@@ -180,7 +185,6 @@ body{
   margin-left: auto;
 }
 
-
 button {
   aspect-ratio: 1;
   height: 35px;
@@ -193,32 +197,6 @@ button {
   color: var(--Light-Grayish-Blue);
   
 }
-
-.share-Overlay {
-  background-color: var(--Very-Dark-Grayish-Blue);
-  color: var(--Grayish-Blue);
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  position: absolute;
-
-  transform: translateX(90%);
-
-  padding: 1rem 2rem;
-  margin-top: 0.8rem;
-  
-}
-
-.share-Overlay p {
-  font-size: 15px;
-  letter-spacing: 2.8px;
-}
-
-.share-Overlay button{
-  background-color: var(--Desaturated-Dark-Blue);
-} 
 
 /* mobile design */
 @media screen and (max-width: 375px) {
@@ -235,6 +213,7 @@ button {
       flex-direction:column;
 
       width: calc(100%-2rem);
+      height: fit-content;
       
     }
 
